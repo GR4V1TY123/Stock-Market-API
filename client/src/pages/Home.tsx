@@ -34,7 +34,7 @@ export default function Home() {
     useEffect(() => {
         const fetchTrendingStocks = async () => {
             try {
-                const res = await fetch("http://localhost:3000/stocks/api/trending")
+                const res = await fetch(`${import.meta.env.SERVER_URL}/stocks/api/trending`)
 
                 if (!res.ok) {
                     throw new Error("Failed to fetch stock data")
