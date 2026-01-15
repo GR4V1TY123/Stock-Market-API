@@ -41,7 +41,7 @@ export default function Details() {
     useEffect(() => {
         async function fetchDetails() {
             try {
-                const res = await fetch(`${import.meta.env.SERVER_URL}/stocks/api/stock/${name}`);
+                const res = await fetch(`${import.meta.env.VITE_SERVER_URL}/stocks/api/stock/${name}`);
                 if (!res.ok) throw new Error("Failed to fetch stock details");
                 const json: { stock: Stock } = await res.json();
                 setData(json.stock);
