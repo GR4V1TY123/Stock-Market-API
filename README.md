@@ -3,14 +3,15 @@
 - **Live Link:** https://stock-market-api-umber.vercel.app/
 
 A React dashboard to view trending Indian stocks using the [IndianAPI](https://indianapi.in/).  
-Displays **top gainers and losers** and detailed stock information including company description, industry, and officers.
+Displays **top gainers and losers** and detailed stock information including company description.
 
 ---
 
 ## Tech Stack
 
 - **Frontend:** React, Tailwind CSS, shadcn/ui  
-- **Backend:** Node.js, Express  
+- **Backend:** Node.js, Express
+- **Deployments:** Render (backend), Vercel (frontend)
 - **Routing:** react-router-dom  
 - **API:** [IndianAPI](https://indianapi.in/)
 
@@ -22,3 +23,4 @@ Displays **top gainers and losers** and detailed stock information including com
 - `GET /stock?name=${name}` → Fetch stock details  
 
 ---
+
