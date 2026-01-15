@@ -12,6 +12,10 @@ app.use(express.json());
 
 app.use("/stocks/api", stockRoutes)
 
+app.get("/", (req,res) => {
+    return res.status(200).send("INDIAN STOCK MARKET API IS LIVE")
+})
+
 app.listen(3000, () => {
     console.log("Server Started on port 3000 ..............");
 
