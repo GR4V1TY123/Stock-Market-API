@@ -1,8 +1,12 @@
 import 'dotenv/config';
+import cors from "cors";
 import express from "express"
 import { stockRoutes } from "./routes/stock.routes.js";
 
 const app = express();
+app.use(cors({
+    origin: "*"
+}))
 
 app.use(express.json());
 
